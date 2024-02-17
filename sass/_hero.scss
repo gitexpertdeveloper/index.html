@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.hero{
+
+	display: flex;
+	justify-content: center;
+	background: linear-gradient(-47deg, #130428, #251043,#38126D);
+
+}
+
+.container-hero{
+
+	display: inline-flex;
+	justify-content: space-between;
+	width:1220px;
+	height: 600px;
+	align-items: center;
+	padding: 0px 40px;
+	max-width: 1220px;
+	
+
+	//Developer Label
+	.developer-label {
+		font-family: "Preahvihear";
+		font-weight: 200;
+		padding: 0px 0px 12px 0px;
+		font-size: 20px;
+	}
+
+	//Developer Title
+	.developer-title {
+		font-family: "Preahvihear";
+		font-weight: 800;
+		font-size: 41.1px;
+		line-height: 47.1px;
+	}
+
+	//Developer Comment
+	.developer-comment {
+		font-family: "Nunito";
+		font-weight: 400;
+		padding: 13px 0px;
+		font-size: 18px;
+	}
+
+	.socials-icons {
+		display: inline-flex;
+		justify-content: space-between;
+		gap: 40px;
+		padding: 26px 19px;
+	}
+	
+	.fa-brands {
+		color: #fff;
+		transition: .5s ease;
+		box-shadow: 0px 0px 0px 0px #7127ba;
+		border-radius: 20px;
+	
+
+		&:hover{
+
+			color: $purplecolor;
+			box-shadow: 0px 0px 0px 26px #7027ba00;
+		}
+	}
+	.button-box {
+		padding: 8px 0px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+
+		.button-divider {
+			letter-spacing: -2px;
+			color: #693B93;
+
+			.my-cv{
+
+				padding: 0px 0px 0px 15px;
+				color: $whitecolor;
+				letter-spacing: 2px;
+			}
+		}
+	}
+}
+
+.container-tow-hero {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: fit-content;
+
+	.developer-img{
+
+		animation: updownimganimation 8s ease infinite;
+
+		@keyframes updownimganimation {
+
+			0%, 100% {
+				transform: translateY(0);
+			  }
+			  50% {
+				transform: translateY(-50px);
+			  }
+			
+		}
+	}
+}
+
+//Media Query For Tablet
+@media all and (min-width: 700px) and (max-width: 1099px){
+
+	.container-hero .developer-title {
+		font-size: 33.1px;
+	}
+	.container-hero {
+		width: fit-content;
+
+	}
+
+
+}
+
+@media all and (min-width: 700px) and (max-width: 999px){
+
+	.container-hero .developer-title {
+		font-size: 35.1px;
+		line-height: 43px;
+	}
+
+	.container-hero .developer-label {
+		font-size: 15px;
+	}
+	.container-tow-hero .developer-img {
+		width: 313px;
+	}
+	.container-hero .socials-icons {
+		padding: 9px 19px;
+	}
+	.container-hero{
+		width: fit-content;
+	}
+
+}
+
+//Media For Phones
+
+@media all and (min-width: 50px) and (max-width: 699px){
+
+	.container-hero {
+		justify-content: center;
+		height: 1150px;
+		flex-direction: column;
+		text-align: center;
+		width: fit-content;
+		
+	}
+
+	.container-tow-hero {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		padding-top: 75.1px;
+	}
+	.container-hero .button-box {
+
+		justify-content: center;
+	}
+	@media all and (min-width: 50px) and (max-width: 699px){
+
+		.container-hero .developer-title {
+			font-size: 33.1px;
+		}
+		.container-hero .developer-comment {
+			padding: 13px 59px;
+			font-size: 18px;
+		}
+		.container-hero{
+			width: fit-content;
+		}
+	
+	}
+	@media all and (min-width: 50px) and (max-width: 499px){
+		.container-tow-hero .developer-img {
+			animation: updownimganimation 8s ease infinite;
+			width: 350px;
+		}
+		.container-hero{
+			width: fit-content;
+		}
+	
+	}
+
+	@media all and (min-width: 50px) and (max-width: 369px){
+
+		.container-tow-hero .developer-img {
+			animation: updownimganimation 8s ease infinite;
+			width: 300px;
+		}
+		.container-hero{
+			width: fit-content;
+		}
+	
+	}
+}

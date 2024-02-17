@@ -1,0 +1,167 @@
+.contact {
+	display: flex;
+	justify-content: center;
+	background: url(https://www.programming-hero.com/footer/footer-bg.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	padding-right: 36px;
+
+
+
+    .contact-container {
+        display: inline-flex;
+        width: 1150px;
+        padding: 149px 0px;
+
+        .contact-title {
+            padding: 0 0 30px 0px;
+        }
+
+        .address {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            font-style: normal;
+            padding: 22px 0 0 0;
+            font-family: "Plus Jakarta Sans";
+        }
+
+        .contact_a {
+            color: white;
+            text-decoration: none;
+            padding: 0px 0px 13px 0px;
+            font-size: 13px;
+            transition: 0.5s ease;
+
+            &:hover{
+
+                color: #804aff;
+            }
+        }
+
+        .fa-regular.fa-envelope {
+            padding: 0 13px 0px 0px;
+        }
+
+        .fa-solid.fa-phone {
+            padding: 0 13px 0 0;
+        }
+
+        .container-one-contact {
+            width: 60%;
+            padding: 43px;
+        }
+
+        .container-tow-contact {
+            width: 40%;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input-box-one {
+            display: flex;
+            justify-content: space-between;
+            gap: 18px;
+
+            .name-input {
+                width: 50%;
+            }
+            .email-input {
+                width: 50%;
+            }
+            
+        }
+
+        #input {
+            height: 35px;
+            padding: 0 10px;
+            background: rgba(0,0,0,0);
+            border: 1px solid #fff;
+            color: #fff;
+            margin-top: 19.1px;
+            border-radius: 8px;
+            outline: none;
+            transition: 0.5s ease;
+
+            &:hover{
+                background: #ffffff1c;
+                backdrop-filter: blur(72px);
+        }
+
+            
+        }
+
+        .msg-input {
+            outline: none;
+            border: 1px solid white;
+            border-radius: 14px;
+            background: transparent;
+            margin-top: 20px;
+            padding: 10px;
+            font-family: "Preahvihear";
+            color: white;
+            font-size: 11px;
+            transition: 0.5s ease;
+
+            &:hover{
+                    background: #ffffff1c;
+                    backdrop-filter: blur(72px);
+            }
+        }
+    }
+}
+
+.form-btn {
+	width: 40%;
+	padding: 9px 0px;
+	border-radius: 8px;
+	margin: 20px 0 0 0;
+	font-family: "Preahvihear";
+    border: none;
+    background: rgba(255, 255, 255, 0.276);
+	box-shadow: 0px 0px 0px 0px #ffffffb8;
+    transition: 0.5s ease;
+    color: white;
+    backdrop-filter: blur(20px);
+
+
+    &:hover{
+        box-shadow: 0px 0px 0px 35px    transparent;
+        background: transparent;
+        margin-left: 20px;
+        border: none;
+        color: white;
+        
+    
+    }
+}
+.contact-comment {
+	font-size: 13px;
+}
+
+//Media
+@media all and (min-width: 50px) and (max-width:599px){
+
+    .contact .contact-container {
+
+        flex-direction: column;
+    }
+
+    .contact .contact-container .container-one-contact {
+        width: 90%;
+        padding: 43px;
+    }
+
+    .contact .contact-container .container-tow-contact {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        padding: 0 0 0 44px;
+    }
+    .contact-form {
+        width: 87%;
+    }
+}

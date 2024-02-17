@@ -1,0 +1,60 @@
+//Veriables
+@import "_var";
+
+//Header Styling
+@import "_header";
+
+//Hero
+@import "_hero";
+
+//About 
+@import "_about";
+
+// Work
+@import "_work";
+
+//Skills
+@import  "_skills";
+
+//Projects
+@import "_projects";
+
+
+//Contact
+@import "_contact";
+// body
+body{
+    
+    background: $bgcolor;
+    color: white;
+    font-family: "Preahvihear";
+    transition: 0.5s ease;
+    
+}
+
+.mark-text {
+	color: $purplecolor;
+}
+
+.button {
+	text-decoration: none;
+	color: $whitecolor;
+	padding: 5px 36px;
+	background: #2C1250;
+	border-radius: 25.1px;
+	box-shadow: 0px 0px 0px 0px  #7027bab8;
+    border: 1px solid #693B93;
+    transition: 0.7s ease;
+    z-index: 1;
+
+    &:hover{
+        box-shadow: 0px 0px 0px 35px $colortransparent;
+    }
+}
+
+
+//*****
+*{
+    margin: 0;
+    padding: 0;
+}

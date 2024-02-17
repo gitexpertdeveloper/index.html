@@ -1,0 +1,102 @@
+.work-exprience{
+
+    display: flex;
+    justify-content: center;
+
+    .work-container{
+
+        display: inline-flex;
+        justify-content: center;
+        width: 1220px ;
+        flex-direction: column;
+        background: url(http://127.0.0.1:5500/assets/img/icons/Gradient.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 577px;
+
+        .work-box-title {
+            padding: 35px 0px;
+            font-size: 39px;
+            text-align: center;
+        }
+
+        .container-one-work{
+
+            display: flex;
+            flex-direction: row;
+            gap: 44px;
+            padding: 0px 20px 55px 20px;
+
+            .work-box-one {
+                display: inline-flex;
+                gap: 31.1px;
+                padding: 34px;
+                background: linear-gradient(to right, #130428, #251043, #38126D, #261045, #190634);
+                border-top: 3px solid #4F228D;
+                border-radius: 17px;
+                transition: 0.5s ease;
+
+                .work-title {
+                    font-size: 24px;
+                    font-family: "Plus Jakarta Sans";
+                }
+
+                .work-descriptiton {
+                    line-height: 26px;
+                    padding: 15px 0px;
+                    font-weight: 500;
+                    font-family: "Plus Jakarta Sans";
+                }
+                .button-work {
+                    padding: 3px 23px;
+                    background: #2B1250;
+                    text-decoration: navajowhite;
+                    color: white;
+                    border-radius: 9px;
+                    border: 1px solid #693B93;
+                    box-shadow: 0px 0px 0px 0px  #7027bab8;
+                    transition: 0.5s ease;
+
+                    &:hover{
+
+                        box-shadow: 0px 0px 0px 35px $colortransparent;
+
+                    }
+
+                }
+            }
+            .work-box-one:hover {
+                margin-top: -23.1px;
+                margin-bottom: 23px;
+            }
+        }
+    }
+}
+
+//Media Querys For Tablet
+@media all and (min-width:50px ) and (max-width: 949px){
+
+    .work-exprience .work-container .container-one-work {
+        display: flex;
+        flex-direction: column;
+        gap: 44px;
+        padding: 0px 20px 55px 20px;
+        
+    }
+    .work-exprience .work-container .container-one-work .work-box-one {
+
+        padding: 36px;
+
+    }
+}
+
+//Media For Phone
+@media all and (min-width:50px ) and (max-width: 449px){
+    .work-box-one {
+        flex-direction: column;
+    }
+
+    .work-img {
+        width: 127px;
+    }
+}

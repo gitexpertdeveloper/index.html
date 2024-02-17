@@ -1,0 +1,75 @@
+.about {
+	display: flex;
+	justify-content: center;
+	background: url(https://www.programming-hero.com/ourCourses/grid-bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.img-about {
+	width: 500px;
+	height: auto;
+	margin-left: -84px;
+    animation: updownimganimation 8s ease infinite;
+    padding-top: 100px;
+}
+.container-one-about {
+	width: 90%;
+}
+
+
+//Media Query For Phone
+@media all and (min-width: 50px ) and (max-width:699px){
+
+    .img-about {
+        width: 600px;
+        margin-bottom: -110.1px;
+        margin-top: -286.1px;
+        margin-left: -124.1px;
+    }
+
+    .about {
+        background-size: 971px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    @media all and (min-width:50px ) and (max-width: 499px){
+
+        .img-about {
+            width: 500px;
+            margin-left: -110.1px;
+        }
+
+        .container-hero .developer-comment {
+            padding: 13px 59px;
+            font-size: 15px;
+        }
+    }
+    @media all and (min-width:50px ) and (max-width: 399px){
+
+        .img-about {
+            width: 460px;
+            margin-left: -110.1px;
+        }
+
+        .container-hero .developer-comment {
+            padding: 13px 59px;
+            font-size: 15px;
+        }
+    }
+    
+}
+
+//Media Query For Tablet 
+@media all and (min-width: 700px ) and (max-width: 849px){
+
+    .container-one-about {
+        width: 45%;
+
+        .img-about {
+            width: 355px;
+        }
+    }
+}

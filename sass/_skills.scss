@@ -1,0 +1,117 @@
+.skills-container {
+	display: flex;
+	justify-content: center;
+	padding-top: 100px;
+	padding-bottom: 111px;
+
+
+    .skills-inner-container{
+
+        display: inline-flex;
+        width: 1220px;
+        text-align: center;
+        justify-content: center;
+
+        .skills-title {
+            font-weight: 200;
+            font-size: 26px;
+        }
+    }
+    .icons-skills {
+        width: 26px;
+        padding: 5px;
+        background: #251C31;
+        border-radius: 50%;
+        z-index: 1;
+
+    }
+
+    .skils-icons-box {
+        margin-bottom: -31px;
+    }
+
+    .icon-box-one {
+        display: inline-flex;
+        gap: 20px;
+        margin-left: -12px;
+    }
+    .icon-box-tow {
+        display: flex;
+        justify-content: center;
+        gap: 19px;
+        margin-left: -18px;
+        padding: 42px 0px 12px 0px;
+    }
+}
+
+//Media For Tablet
+@media all and (min-width: 50px ) and (max-width: 999px){
+
+    .space-skills {
+        width: 750px;
+    }
+
+    @media all and (min-width:50px) and (max-width:749px){
+
+        .skills-container .icons-skills {
+            width: 18px;
+        }
+        .skills-container .icon-box-one {
+            gap: 13px;
+        }
+
+        .skills-container .icon-box-tow {
+
+            gap: 15px;
+
+        }
+
+        .skills-container .skills-inner-container .skills-title {
+            font-weight: 200;
+            font-size: 23px;
+        }
+        .space-skills {
+            width: 594px;
+        }
+    }
+
+    @media all and (min-width:50px) and (max-width:680px){
+        .space-skills {
+            width: 490px;
+        }
+    }
+
+    @media all and (min-width:50px) and (max-width:563px){
+
+        .space-skills {
+            width: 400px;
+        }
+
+        .skills-container .skills-inner-container .skills-title {
+            padding: 0px 62px;
+        }
+    }
+
+    @media all and (min-width:50px) and (max-width:443px){
+
+        .space-skills {
+            width: 330px;
+        }
+
+        .skills-container .skills-inner-container .skills-title {
+            padding: 0px 20px;
+        }
+    }
+
+    @media all and (min-width:50px) and (max-width:356px){
+
+        .space-skills {
+            width: 290px;
+        }
+
+        .skills-container .skills-inner-container .skills-title {
+            padding: 0px 20px;
+        }
+    }
+
+}

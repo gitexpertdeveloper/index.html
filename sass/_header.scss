@@ -1,0 +1,136 @@
+
+//Header Section
+.header-section{
+
+    display: flex;
+    justify-content: center;
+    background: $headerbgcolor;
+    z-index: 10;
+
+    //Header Container
+    .header-container{
+
+        display: flex;
+        justify-content: space-between;
+        width: 1220px;
+        height: 80px;
+        align-items: center;
+        padding: 0px 34px;
+        z-index: 10;
+
+        //Logo Container
+        .logo-container{
+
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        //Menu Container
+        .menu-li{
+            color: $colortransparent;
+
+            //Menu
+            .menu{
+
+                color: $whitecolor;
+                text-decoration: none;  
+                margin: 0px 10px 0px 60px;
+                transition: 0.3s ease;
+                font-family: "Plus Jakarta Sans";
+
+                //Menu Hover
+                &:hover{    
+
+                    color: $purplecolor;
+
+                }
+                
+            }
+            
+        }
+        .material-symbols-outlined{
+
+            color: $whitecolor;
+            font-weight: 200;
+            font-size: 40px;
+            display: none;
+            transition: 0.3s ease;
+
+            &:hover{
+
+                color: $purplecolor;
+            }
+        }
+    
+    }
+
+}
+
+//Media Query For Tablate Menu
+@media all and (min-width: 800px) and (max-width: 1000px) {
+    .header-section .header-container .menu-li .menu {
+
+        margin: 0px 10px 0px 38px;
+    }
+}
+
+//Menu Nav
+@media all and (min-width: 50px) and (max-width: 799px) {
+
+    .header-section .header-container .material-symbols-outlined {
+
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-are {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        justify-content: center;
+        display: none;
+        top: 81px;
+        animation: fadeAnimation 0.5s  ease-out;
+
+        &.open{
+
+            display: flex;
+        }
+
+    }
+    @keyframes fadeAnimation {
+        0% {
+          opacity: 0%;
+          left: 600px;
+        }
+        100% {
+          opacity: 100%;
+          left: 0px;
+        }
+      }
+
+    .menu-li {
+        flex-direction: column;
+        display: flex;
+        width: 90%;
+        text-align: center;
+        background: linear-gradient(120deg, #130428, #251043, #38126D, #261045, #190634);
+        padding: 56px 0px;
+        border-radius: 15px;
+        border-top: 4px solid #693b93;
+        border-right: 3px solid #693b93;
+    }
+    .header-section .header-container .menu-li .menu {
+
+        margin: 10px 0px;
+    }
+}
+
+@media all and (min-width: 50px) and (max-width: 299px) {
+
+    .logo {
+        width: 100px;
+        height: auto;
+    }
+
+}
