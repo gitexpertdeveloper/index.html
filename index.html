@@ -15,7 +15,7 @@
 </head>
 <body>
     <!--Header -->
-    <header class="header-section">
+    <header id="home" class="header-section">
         <div class="header-container">
             <div class="logo-container">
                 <img src="assets/img/logo/JUNAID.svg" alt="" class="logo">
@@ -23,11 +23,11 @@
             <div class="menu-container">
                 <div class="menu-are ">
                     <li class="menu-li">
-                        <a href="index.html" class="menu">Home</a>
-                        <a href="index.html" class="menu">About</a>
-                        <a href="index.html" class="menu">Protfolio</a>
-                        <a href="index.html" class="menu">Skills</a>
-                        <a href="index.html" class="menu">Contact</a>
+                        <a href="#home" class="menu">Home</a>
+                        <a href="#about" class="menu">About</a>
+                        <a href="#portfolio" class="menu">Portfolio</a>
+                        <a href="#skills" class="menu">Skills</a>
+                        <a href="#contact" class="menu">Contact</a>
                     </li>
                 </div>
                 <span class="material-symbols-outlined menu-icon">
@@ -38,7 +38,7 @@
     </header>
     <!---Header-->
     <!--Hero -->
-    <section class="hero">
+    <section  class="hero">
         <div class="container-hero">
             <div class="container-one-hero">
                 <h5 class="developer-label">A Developer Who</h5>
@@ -61,7 +61,7 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section id="about" class="about">
         <div class="container-hero">
             <div class="container-one-about">
                 <dotlottie-player loading="lazy" class="img-about"src="https://lottie.host/d4c86302-7d1c-42c6-b0e9-440984792edf/BnQT8i5AeY.json" background="transparent" speed="1"  loop autoplay></dotlottie-player>
@@ -78,7 +78,7 @@
             </div>
         </div>
     </section>
-    <section class="work-exprience">
+    <section id="portfolio" class="work-exprience">
         <div class="work-container">
             <h2 class="work-box-title">Work Expriences</h2>
             <div class="container-one-work">
@@ -123,7 +123,7 @@
             </div>
         </div>
     </section>
-    <section class="skills-container">
+    <section id="skills" class="skills-container">
         <div class="skills-inner-container">
             <div class="skills-box">
                 <h1 class="skills-title">I'm currently looking to join a <strong class="mark-text skills-mark">cross-functional</strong> team</h1>
@@ -150,7 +150,7 @@
             </div>
         </div>
     </section>
-    <section class="projects">
+    <section  class="projects">
         <div class="project-container">
             <div class="project-box">
                 <div class="project-info">
@@ -196,13 +196,13 @@
                 </address>
             </div>
             <div class="container-tow-contact">
-                    <form action="index.html" method="post" class="contact-form">
+                    <form style="padding-bottom: 21px;" action="index.php" method="post" class="contact-form">
                         <div class="input-box-one">
                             <input class="name-input " id="input" placeholder="Name" name="name" required type="text">
                             <input class="email-input " id="input"  required name="email" placeholder="Email" type="email">
                         </div>
                         <input class="tel-input input" id="input"  placeholder="Mobile Number" required name="tel" type="tel">
-                        <textarea class="msg-input "  name="msg"rows="5"></textarea>
+                        <textarea  placeholder="Message Me" class="msg-input "  name="msg"rows="5"></textarea>
                         <div class="button-box">
                             <button class="form-btn"  name="submit" type="submit">Submit</button>
                         </div>
@@ -210,11 +210,19 @@
             </div>
         </div>
     </section>
+    <!-- <section class="poup">
+        <div class="poup-container">
+            <div class="popup-box">
+                <h1 class="popup-title">thanks for Contact</h1>
+            </div>
+        </div>
+    </section> -->
     <!---Hero-->
 </body>
     <!-- JavaScript -->
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
     <script src="js/script.js"></script>
 </html>
+
 
 
